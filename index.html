@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>What Can I See Inicio</title>
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/imgs/logored-removebg.png" alt="logoMenu" class="d-inline-block align-text-top"
+                    style="max-height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-danger" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/obras.html" target="_blank">Obras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/mapa.html" target="_blank">Mapa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/noticias.html" target="_blank">Noticias</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/registrarse.html"
+                            target="_blank">Registrarse</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Migas de Pan -->
+    <nav aria-label="migas de pan" class="bg-light py-2">
+        <ol class="breadcrumb container">
+            <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Página Principal</li>
+        </ol>
+    </nav>
+
+    <!-- Carrusel de Eventos -->
+    <div id="eventCarousel" class="carousel slide bg-danger text-white" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <h5 class="py-3">| PROXIMOS EVENTOS UAX: DICIEMBRE 14/12</h5>
+            </div>
+            <div class="carousel-item text-center">
+                <h5 class="py-3">| EXPOSICIÓN DE ARTE: ENERO 18/01</h5>
+            </div>
+            <div class="carousel-item text-center">
+                <h5 class="py-3">| GALA CULTURAL: FEBRERO 22/02</h5>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="container my-5">
+        <div class="row g-7">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./assets/imgs/freeImages/1.jpg" class="card-img-top" alt="imagenCuadro">
+                    <div class="card-body">
+                        <h5 class="card-title">Van Gogh: El Genio Incomprendido</h5>
+                        <p class="card-text text-danger">17 de marzo de 2023</p>
+                        <p class="card-text">"La Noche Estrellada" captura un cielo nocturno en movimiento con remolinos
+                            de luz, estrellas brillantes y un ciprés.</p>
+                        <a href="#" class="btn btn-danger">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./assets/imgs/freeImages/2.jpg" class="card-img-top" alt="imagenCuadro">
+                    <div class="card-body">
+                        <h5 class="card-title">Van Gogh en el Torbellino del Arte</h5>
+                        <p class="card-text text-danger">19/04/2024</p>
+                        <p class="card-text">Un retrato que combina su autorretrato con fondos dinámicos y ondulantes
+                            evocando su estilo artístico.</p>
+                        <a href="#" class="btn btn-danger">+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./assets/imgs/freeImages/3.jpg" class="card-img-top" alt="imagenCuadro">
+                    <div class="card-body">
+                        <h5 class="card-title">Guernica: El Lamento de la Guerra</h5>
+                        <p class="card-text text-danger">12 de octubre de 1937</p>
+                        <p class="card-text">Creada como respuesta al bombardeo de Guernica, simbolizando la tragedia
+                            humana del conflicto.</p>
+                        <a href="#" class="btn btn-danger">+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Acordeón -->
+        <div class="accordion my-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-danger text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué es la exposición de arte?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La exposición de arte es un evento donde se muestran obras de artistas conocidos o emergentes.
+                        La exposición de arte de enero estará centrada en Van Gogh y sus pinturas más reconocidas.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Videos y audio -->
+        <h3 class="mb-5 text-center">Exposición Virtual</h3>
+        <video id="videoFondo" class="w-100 mx-auto d-block">
+            <source src="../WhatCanISee/assets/videos/videoDemo.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+            <button onclick="playVideo()">Reproducir Video</button>
+        </video>
+
+        <h3 class="d-block mx-auto text-center m-5">Musica de fondo</h3>
+        <audio id="audioFondo" controls class="d-block mx-auto">
+            <source src="../WhatCanISee/assets/videos/audioFondo.mp3" type="audio/mp3">
+            Tu navegador no soporta el formato de audio.
+            <button onclick="playAudio()">Reproducir Audio</button>
+        </audio>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="./assets/imgs/logored-removebg.png" alt="Logo" style="max-height: 100px;">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Redes Sociales</h5>
+                    <a href="#" class="text-white me-3"><img src="./assets/imgs/iconoInstagram.png" alt="Instagram"
+                            style="width: 30px;"> Instagram</a><br>
+                    <a href="#" class="text-white me-3"><img src="./assets/imgs/logoTwitter.png" alt="Twitter"
+                            style="width: 30px;"> Twitter</a><br>
+                    <a href="#" class="text-white"><img src="./assets/imgs/iconoGitHub.png" alt="GitHub"
+                            style="width: 30px;"> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de bootstrap y video/audio -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../WhatCanISee/js/index.js"></script>
+</body>
+
+</html>
